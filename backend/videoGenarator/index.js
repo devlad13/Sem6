@@ -115,7 +115,7 @@
 
 const express = require("express");
 const mongoose = require('mongoose');
-const collection = require("./Models/User");
+const collection = require("../Models/User");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const fs = require('fs');
@@ -127,7 +127,7 @@ const { exec } = require('child_process'); //for video merging
 const fse = require('fs-extra');  //for copying the mergedVideo and pasting into one folder
 
 //for schema 
-const User=require("./Models/User")
+const User=require("../Models/User")
 
 const { spawn } = require('child_process'); //for model.py 
 const { match } = require("assert");
